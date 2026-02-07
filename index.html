@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Starter-Kit | John Edmiston</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2e7d32; /* A more sophisticated green */
+            --accent: #1976d2;
+            --text: #333;
+            --bg: #f4f7f6;
+            --card: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        header { text-align: center; margin-bottom: 40px; }
+
+        h1 { color: var(--primary); margin-bottom: 5px; font-size: 2.5rem; }
+        .author { font-weight: 600; color: #666; margin-top: 0; }
+
+        .intro-text { font-size: 1.1rem; text-align: center; margin-bottom: 30px; }
+
+        /* Downloads Section */
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .btn-download {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn-download:hover { opacity: 0.9; }
+
+        /* Lessons List */
+        .lessons {
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary);
+        }
+
+        ol { padding-left: 20px; }
+        ol li { margin-bottom: 12px; }
+        ol li a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        ol li a:hover { text-decoration: underline; }
+
+        /* Subscription Form */
+        .subscribe-box {
+            margin-top: 40px;
+            padding: 30px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+        }
+
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: 600; margin-bottom: 5px; }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .btn-submit {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        footer { text-align: center; margin-top: 30px; font-size: 0.9rem; color: #888; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Christian Starter-Kit</h1>
+        <p class="author">By John Edmiston</p>
+    </header>
+
+    <p class="intro-text">
+        Twelve short Bible studies for new Christians and for those seeking clarity in their faith. 
+        <br><a href="#" style="color:var(--accent)">How To Become A Christian &rarr;</a>
+    </p>
+
+    <section class="download-grid">
+        <a href="#" class="btn-download">Download PDF</a>
+        <a href="#" class="btn-download">OpenDocument</a>
+        <a href="#" class="btn-download">Word (.doc)</a>
+    </section>
+
+    <section class="lessons">
+        <h3>12 Things Christians Should Know</h3>
+        <ol>
+            <li><a href="how_to_become_a_christian.html">How to Become A Christian?</a></li>
+            <li><a href="how_to_be_sure_you_really_are_a_christian.html">How To Be Sure You Really Are A Christian</a></li>
+            <li><a href="how_to_read_the_bible.html">How To Read The Bible</a></li>
+            <li><a href="how_to_pray.html">How To Pray</a></li>
+            <li><a href="what_is_god_like.html">What Is God Like?</a></li>
+            <li><a href="what_has_happened_to_me.html">What Has Happened To Me?</a></li>
+            <li><a href="meeting_gods_people.html">Meeting God's People</a></li>
+            <li><a href="breaking_free_from_sin.html">Breaking Free From Sin</a></li>
+            <li><a href="what_about_heaven_and_hell.html">What About Heaven and Hell?</a></li>
+            <li><a href="what_about_my_friends.html">What About My Friends?</a></li>
+            <li><a href="loving_your_neighbour.html">Loving Your Neighbour</a></li>
+            <li><a href="having_the_holy_spirit_release_in_your_life.html">Having the Holy Spirit Release in Your Life</a></li>
+        </ol>
+    </section>
+
+    <section class="subscribe-box">
+        <h3>Subscribe to Daily Lessons</h3>
+        <p>Receive these twelve lessons once a day via email.</p>
+        <form>
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="First and Last Name">
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com">
+            </div>
+            <button type="submit" class="btn-submit">Sign Me Up</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Related Links: Bible Study Resources | E-Sword Software</p>
+    </footer>
+</div>
+
+</body>
+</html>
